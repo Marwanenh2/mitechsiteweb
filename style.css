@@ -468,3 +468,10 @@ h1 {
         padding: 28px;
     }
 }
+
+.logo {
+    height: 28px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 8px;
+}

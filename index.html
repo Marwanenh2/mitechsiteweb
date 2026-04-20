@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mitech Rouen — Accueil</title>
+    <title>Mitech Rouen — Réparations</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
+    <!-- HEADER AVEC TON LOGO -->
     <header class="topbar">
         <div class="container nav">
+
             <a class="brand" href="index.html">
-                <div class="brand-mark">M</div>
+                <img src="logo.png" alt="Mitech logo" class="logo">
                 <span>MITECH</span>
             </a>
 
@@ -28,98 +30,81 @@
         </div>
     </header>
 
-
     <main>
+
+        <!-- HERO -->
         <section class="hero">
             <div class="container">
                 <div class="hero-center reveal">
-                    <div class="eyebrow">Réparer. Acheter. Avancer.</div>
-                    <h1>Mitech Rouen.</h1>
+                    <div class="eyebrow">Réparations</div>
+                    <h1>Réparer l’essentiel.</h1>
                     <p class="hero-sub">
-                        Réparation de téléphones, vente d’appareils, accessoires et accompagnement technique,
-                        dans une expérience plus claire, plus premium et plus moderne.
+                        Une expérience simple, rapide et efficace pour retrouver votre téléphone comme neuf.
                     </p>
+
                     <div class="hero-actions">
-                        <a class="btn btn-dark" href="reparations.html">Découvrir</a>
-                        <a class="btn btn-light" href="contact.html">Nous contacter</a>
+                        <a class="btn btn-dark" href="contact.html">Demander un devis</a>
+                        <a class="btn btn-light" href="achat.html">Voir les produits</a>
                     </div>
                 </div>
-
-                <div class="hero-media reveal">
-                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1800&q=80"
-                        alt="Smartphone premium">
-                </div>
             </div>
         </section>
 
+        <!-- IMAGE + TEXTE -->
         <section class="section">
-            <div class="container">
-                <div class="section-head reveal">
-                    <h2>Le service mobile,<br>pensé pour aujourd’hui.</h2>
+            <div class="container showcase">
+
+                <div class="showcase-copy reveal">
+                    <h2>Une panne ne doit pas ralentir votre quotidien.</h2>
                     <p>
-                        Un site plus minimal, plus élégant et plus haut de gamme pour donner tout de suite
-                        une impression sérieuse et moderne.
+                        Écran cassé, batterie fatiguée, problème de charge ou de son :
+                        chaque réparation est faite pour être rapide, claire et fiable.
                     </p>
                 </div>
 
-                <div class="feature-grid">
-                    <article class="feature dark reveal">
-                        <div class="feature-content">
-                            <h3>Réparation experte</h3>
-                            <p>Écran, batterie, connecteur, audio, caméra et diagnostic clair.</p>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=1400&q=80"
-                            alt="Réparation smartphone">
-                    </article>
-
-                    <article class="feature reveal">
-                        <div class="feature-content">
-                            <h3>Achat & reprise</h3>
-                            <p>Téléphones neufs ou reconditionnés, avec conseil selon le budget et l’usage.</p>
-                        </div>
-                        <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1400&q=80"
-                            alt="Achat smartphone">
-                    </article>
+                <div class="showcase-media reveal">
+                    <img
+                        src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=1600&q=80">
                 </div>
+
             </div>
         </section>
 
+        <!-- SERVICES -->
         <section class="section">
-            <div class="container">
-                <div class="card-grid">
-                    <article class="card reveal">
-                        <div class="kicker">Réparation</div>
-                        <h3>Rapide. Claire. Rassurante.</h3>
-                        <p>Une présentation simple des interventions les plus demandées pour inspirer confiance
-                            immédiatement.</p>
-                    </article>
+            <div class="container card-grid">
 
-                    <article class="card reveal">
-                        <div class="kicker">Vente</div>
-                        <h3>Le bon appareil, au bon niveau.</h3>
-                        <p>Une page dédiée pour exposer les téléphones et mettre en avant les produits utiles en
-                            boutique.</p>
-                    </article>
+                <article class="card reveal">
+                    <div class="kicker">Écran</div>
+                    <h3>Remplacement écran</h3>
+                    <p>Fissures, écran noir ou tactile HS : remplacement complet.</p>
+                </article>
 
-                    <article class="card reveal">
-                        <div class="kicker">Boutique</div>
-                        <h3>Des infos pratiques, sans friction.</h3>
-                        <p>Adresse, téléphone, horaires et contact accessibles rapidement, sur desktop comme sur mobile.
-                        </p>
-                    </article>
-                </div>
+                <article class="card reveal">
+                    <div class="kicker">Batterie</div>
+                    <h3>Autonomie retrouvée</h3>
+                    <p>Une batterie neuve pour retrouver une utilisation normale.</p>
+                </article>
+
+                <article class="card reveal">
+                    <div class="kicker">Diagnostic</div>
+                    <h3>Charge, audio, caméra</h3>
+                    <p>Analyse précise pour identifier et résoudre la panne.</p>
+                </article>
+
             </div>
         </section>
-    </main>
 
+    </main>
 
     <footer class="footer">
         <div class="container">
-            Mitech Rouen — Démo de site vitrine moderne • <span data-year></span>
+            Mitech Rouen — Réparations • <span data-year></span>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
