@@ -4,85 +4,117 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mitech Rouen — Réparations</title>
+    <title>Mitech Rouen — Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- HEADER AVEC TON LOGO -->
     <header class="topbar">
-        <div class="container nav">
-
-            <a class="brand" href="index.html">
-                <img src="logo.png" alt="Mitech logo" class="logo">
-                <span>MITECH</span>
+        <div class="nav-wrap">
+            <a href="index.html" class="brand">
+                <img src="logo.png" alt="Logo Mitech" class="brand-logo" />
+                <span class="brand-text">MITECH</span>
             </a>
-
             <nav class="nav-links">
                 <a href="index.html">Accueil</a>
                 <a href="reparations.html">Réparations</a>
                 <a href="achat.html">Achat / Vente</a>
-                <a href="contact.html">Contact</a>
+                <a href="accessoires.html">Accessoires</a>
+                <a href="contact.html" class="active">Contact</a>
             </nav>
-
-            <a class="nav-cta" href="contact.html">Devis</a>
+            <a href="contact.html" class="devis-btn">Devis gratuit <span>↗</span></a>
         </div>
     </header>
 
-
     <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-center reveal">
-                    <div class="eyebrow">Contact</div>
-                    <h1>Rester simple.</h1>
-                    <p class="hero-sub">
-                        Toutes les informations utiles, dans une page plus minimaliste,
-                        plus lisible et plus proche d’un vrai site premium.
-                    </p>
-                    <div class="hero-actions">
-                        <a class="btn btn-dark" href="tel:0987312113">Appeler</a>
-                    </div>
-                </div>
+
+        <section class="page-hero page-hero--center">
+            <div class="page-hero-inner reveal">
+                <p class="overline">Contact</p>
+                <h1>Parlons de votre projet.</h1>
+                <p class="hero-desc">Une question, un devis ou une réparation urgente ? On vous répond vite.</p>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container info-grid">
-                <div class="info-panel reveal">
-                    <h3>Mitech Rouen</h3>
-                    <div class="info-list">
-                        <div class="info-item">
-                            <strong>Adresse</strong>
-                            156 Rue Saint-Sever, 76100 Rouen
-                        </div>
-                        <div class="info-item">
-                            <strong>Téléphone</strong>
-                            09 87 31 21 13
-                        </div>
-                        <div class="info-item">
-                            <strong>Horaires affichés</strong>
-                            Lundi à jeudi : 10h30 – 19h<br>
-                            Vendredi : 10h30 – 12h30 / 14h30 – 19h<br>
-                            Samedi : 10h30 – 19h<br>
-                            Dimanche : fermé
-                        </div>
-                    </div>
+        <section class="contact-section">
+            <div class="contact-grid">
+
+                <div class="contact-info reveal">
+                    <h2>Nos coordonnées</h2>
+                    <ul class="contact-list">
+                        <li>
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                            </span>
+                            <span>156 rue Saint-Sever, 76100Rouen</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z" />
+                                </svg>
+                            </span>
+                            <span>09 87 31 21 13</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                    <polyline points="22,6 12,13 2,6" />
+                                </svg>
+                            </span>
+                            <span>mitech.rouen@gmail.com</span>
+                        </li>
+                        <li>
+                            <span class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                            </span>
+                            <span>Lun–Sam : 10h30–19h</span>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="showcase-media reveal">
-                    <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&w=1600&q=80"
-                        alt="Univers tech premium">
+                <div class="contact-form-wrap reveal">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" placeholder="Votre nom" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="votre@email.fr" />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Décrivez votre besoin..."></textarea>
+                    </div>
+                    <button type="button" class="btn btn-light btn-submit">Envoyer <span>→</span></button>
                 </div>
+
             </div>
         </section>
+
     </main>
 
-
     <footer class="footer">
-        <div class="container">
-            Mitech Rouen — Démo de site vitrine moderne • <span data-year></span>
+        <div class="footer-inner">
+            <span class="footer-brand">MITECH</span>
+            <span class="footer-sep">—</span>
+            <span>Rouen · Contact</span>
+            <span class="footer-sep">·</span>
+            <span data-year></span>
         </div>
     </footer>
 

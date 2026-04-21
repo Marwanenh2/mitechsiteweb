@@ -4,105 +4,106 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mitech Rouen — Réparations</title>
+    <title>Mitech Rouen — Achat / Vente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- HEADER AVEC TON LOGO -->
     <header class="topbar">
-        <div class="container nav">
-
-            <a class="brand" href="index.html">
-                <img src="logo.png" alt="Mitech logo" class="logo">
-                <span>MITECH</span>
+        <div class="nav-wrap">
+            <a href="index.html" class="brand">
+                <img src="logo.png" alt="Logo Mitech" class="brand-logo" />
+                <span class="brand-text">MITECH</span>
             </a>
-
             <nav class="nav-links">
                 <a href="index.html">Accueil</a>
                 <a href="reparations.html">Réparations</a>
-                <a href="achat.html">Achat / Vente</a>
+                <a href="achat.html" class="active">Achat / Vente</a>
+                <a href="accessoires.html">Accessoires</a>
                 <a href="contact.html">Contact</a>
             </nav>
-            <a class="nav-cta" href="contact.html">Devis</a>
+            <a href="contact.html" class="devis-btn">Devis gratuit <span>↗</span></a>
         </div>
     </header>
 
-
     <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero-center reveal">
-                    <div class="eyebrow">Achat / Vente</div>
-                    <h1>Choisir mieux.</h1>
-                    <p class="hero-sub">
-                        Des téléphones neufs ou reconditionnés, des accessoires et une présentation plus élégante
-                        pour valoriser l’offre de la boutique.
-                    </p>
-                    <div class="hero-actions">
-                        <a class="btn btn-dark" href="contact.html">Demander conseil</a>
-                        <a class="btn btn-light" href="index.html">Retour accueil</a>
-                    </div>
-                </div>
 
-                <div class="hero-media reveal">
-                    <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=1800&q=80"
-                        alt="Téléphone haut de gamme">
+        <section class="page-hero">
+            <div class="page-hero-inner reveal">
+                <p class="overline">Achat / Vente</p>
+                <h1>Choisir mieux.</h1>
+                <p class="hero-desc">
+                    Des téléphones neufs ou reconditionnés, des accessoires et une sélection rigoureuse pour vous offrir
+                    le meilleur rapport qualité/prix.
+                </p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn btn-light">Demander conseil <span>→</span></a>
+                    <a href="index.html" class="btn btn-dark">Retour accueil <span>→</span></a>
                 </div>
+            </div>
+            <div class="page-hero-media reveal">
+                <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=1800&q=80"
+                    alt="Téléphone haut de gamme">
             </div>
         </section>
 
-        <section class="section">
-            <div class="container card-grid">
+        <section class="cards-section">
+            <div class="cards-wrap">
                 <article class="card reveal">
                     <div class="kicker">Neuf</div>
                     <h3>Des modèles actuels.</h3>
-                    <p>Une mise en avant simple, premium et lisible pour présenter les appareils proposés en boutique.
-                    </p>
+                    <p>Une mise en avant simple et premium pour présenter les appareils proposés en boutique.</p>
                 </article>
                 <article class="card reveal">
                     <div class="kicker">Reconditionné</div>
                     <h3>Une option intelligente.</h3>
-                    <p>Parfait pour montrer une solution plus accessible, sans alourdir l’expérience utilisateur.</p>
+                    <p>Parfait pour une solution plus accessible, contrôlée et garantie.</p>
                 </article>
                 <article class="card reveal">
                     <div class="kicker">Accessoires</div>
-                    <h3>Ce qu’il faut au quotidien.</h3>
-                    <p>Coques, câbles, verres trempés, chargeurs et produits utiles dans une présentation plus propre.
-                    </p>
+                    <h3>Ce qu'il faut au quotidien.</h3>
+                    <p>Coques, câbles, verres trempés, chargeurs dans une présentation soignée.</p>
                 </article>
             </div>
         </section>
 
-        <section class="section">
-            <div class="container feature-grid">
-                <article class="feature reveal">
-                    <div class="feature-content">
+        <section class="feature-section">
+            <div class="feature-grid">
+                <article class="feature-card reveal">
+                    <div class="feature-card-content">
+                        <div class="kicker">Boutique</div>
                         <h3>Présentation produits</h3>
-                        <p>Le bon format pour mettre ensuite les vrais modèles, les vrais prix et les vraies promotions.
-                        </p>
+                        <p>Le bon format pour présenter les vrais modèles, les vrais prix et les vraies promotions.</p>
                     </div>
                     <img src="https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?auto=format&fit=crop&w=1400&q=80"
                         alt="Produits smartphones">
                 </article>
-
-                <article class="feature dark reveal">
-                    <div class="feature-content">
+                <article class="feature-card feature-card--dark reveal">
+                    <div class="feature-card-content">
+                        <div class="kicker">Conseil</div>
                         <h3>Conseil en boutique</h3>
-                        <p>Un rendu plus premium qui donne envie de venir demander conseil directement en magasin.</p>
+                        <p>Un rendu premium qui donne envie de venir demander conseil directement en magasin.</p>
                     </div>
                     <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1400&q=80"
                         alt="Conseil smartphone">
                 </article>
             </div>
         </section>
+
     </main>
 
-
     <footer class="footer">
-        <div class="container">
-            Mitech Rouen — Démo de site vitrine moderne • <span data-year></span>
+        <div class="footer-inner">
+            <span class="footer-brand">MITECH</span>
+            <span class="footer-sep">—</span>
+            <span>Rouen · Achat / Vente</span>
+            <span class="footer-sep">·</span>
+            <span data-year></span>
         </div>
     </footer>
 
