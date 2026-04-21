@@ -1,3 +1,9 @@
+// Barre écologie : fermeture au clic sur la croix
+document.querySelectorAll('.eco-close').forEach(btn => {
+    btn.addEventListener('click', () => {
+        btn.closest('.eco-bar').style.display = 'none';
+    });
+});
 // Année dynamique
 document.querySelectorAll('[data-year]').forEach(el => {
     el.textContent = new Date().getFullYear();
