@@ -1,3 +1,13 @@
+/* ---------- CONTAINER GLOBAL ---------- */
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    box-sizing: border-box;
+}
+
 /* =============================================
    MITECH ROUEN — style.css
    Fonts: Syne (titres) + DM Sans (corps)
@@ -70,7 +80,7 @@ button {
 
 .nav-wrap {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 2.5rem;
     display: flex;
@@ -209,7 +219,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 2.5rem;
     gap: 4rem;
@@ -401,7 +411,7 @@ button {
 .services {
     background: var(--white);
     padding: 90px 2.5rem;
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -495,7 +505,7 @@ button {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 4rem;
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -551,7 +561,7 @@ body:not(:has(.hero)) {
 }
 
 .showcase-wrap {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -590,7 +600,7 @@ body:not(:has(.hero)) {
 }
 
 .cards-wrap {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -642,7 +652,7 @@ body:not(:has(.hero)) {
 }
 
 .feature-grid {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -710,7 +720,7 @@ body:not(:has(.hero)) {
 }
 
 .contact-grid {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1.4fr;
@@ -818,7 +828,7 @@ body:not(:has(.hero)) {
 }
 
 .footer-inner {
-    max-width: 1280px;
+    max-width: 1600px;
     margin: 0 auto;
     display: flex;
     align-items: center;
