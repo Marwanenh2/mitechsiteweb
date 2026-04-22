@@ -416,8 +416,7 @@ button {
 
 /* Côté droit — image hero */
 .hero-right {
-<<<<<<< HEAD
-    width: 50vw;
+    <<<<<<< HEAD width: 50vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -426,18 +425,16 @@ button {
     margin: 0;
     box-sizing: border-box;
     background: transparent;
-=======
-    width: 50%;
+    =======width: 50%;
     height: 100%;
     display: flex;
     align-items: stretch;
->>>>>>> parent of 1226ffb (17)
+    >>>>>>>parent of 1226ffb (17)
 }
 
 .hero-img-wrap {
     position: relative;
-<<<<<<< HEAD
-    width: 100vw;
+    <<<<<<< HEAD width: 100vw;
     height: 100vh;
     min-height: unset;
     overflow: hidden;
@@ -447,22 +444,18 @@ button {
     padding: 0;
     margin: 0;
     background: transparent;
-=======
-    width: 100%;
+    =======width: 100%;
     min-height: 500px;
     overflow: hidden;
->>>>>>> parent of 1226ffb (17)
+    >>>>>>>parent of 1226ffb (17)
 }
 
 .hero-img-wrap img {
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
-    max-width: 100vw;
+    <<<<<<< HEAD max-width: 100vw;
     max-height: 100vh;
-=======
->>>>>>> parent of 1226ffb (17)
-    object-fit: contain;
+    =======>>>>>>>parent of 1226ffb (17) object-fit: contain;
     object-position: center;
     display: block;
     margin: 0 auto;
