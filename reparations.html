@@ -20,13 +20,14 @@
                 <img src="logo.png" alt="Logo Mitech" class="brand-logo" />
                 <span class="brand-text">MITECH</span>
             </a>
+
             <nav class="nav-links">
                 <a href="index.html">Accueil</a>
                 <a href="reparations.html" class="active">Réparations</a>
                 <a href="achat.html">Achat / Vente</a>
-
                 <a href="contact.html">Contact</a>
             </nav>
+
             <a href="contact.html" class="devis-btn">Devis gratuit <span>↗</span></a>
         </div>
     </header>
@@ -43,6 +44,48 @@
                 <div class="hero-actions">
                     <a href="contact.html" class="btn btn-light">Demander un devis <span>→</span></a>
                     <a href="achat.html" class="btn btn-dark">Voir les produits <span>→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="repair-selector-section">
+            <div class="repair-selector-card reveal">
+                <div class="repair-selector-head">
+                    <h2>Sélectionnez votre appareil</h2>
+                </div>
+
+                <div class="repair-selector-top">
+                    <div class="repair-selector-controls">
+                        <div class="repair-field">
+                            <label for="repair-family">Type d’appareil</label>
+                            <select id="repair-family">
+                                <option value="iphone">iPhone</option>
+                                <option value="samsung">Samsung</option>
+                            </select>
+                        </div>
+
+                        <div class="repair-field">
+                            <label for="repair-model">Modèle</label>
+                            <select id="repair-model"></select>
+                        </div>
+
+                        <a href="contact.html" class="repair-help-link">Aidez-nous à identifier votre modèle ›</a>
+                    </div>
+                </div>
+
+                <div class="repair-estimate-grid">
+                    <div class="repair-phone-visual">
+                        <img id="repair-phone-image" src="images/iphone-17-pro-max.jpg" alt="Téléphone sélectionné">
+                    </div>
+
+                    <div class="repair-prices-panel">
+                        <p class="repair-cost-label">Services disponibles</p>
+                        <div class="repair-price-list" id="repair-price-list"></div>
+
+                        <div class="repair-action">
+                            <a href="contact.html" class="repair-assistance-btn">Assistance</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -69,11 +112,13 @@
                     <h3>Remplacement écran</h3>
                     <p>Fissures, écran noir ou tactile HS : remplacement complet.</p>
                 </article>
+
                 <article class="card reveal">
                     <div class="kicker">Batterie</div>
                     <h3>Autonomie retrouvée</h3>
                     <p>Une batterie neuve pour retrouver une utilisation normale.</p>
                 </article>
+
                 <article class="card reveal">
                     <div class="kicker">Diagnostic</div>
                     <h3>Charge, audio, caméra</h3>
@@ -92,6 +137,7 @@
             <span class="footer-sep">·</span>
             <span data-year></span>
         </div>
+
         <div class="eco-bar">
             <span class="eco-logo">
                 <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,8 +147,9 @@
                     <circle cx="14" cy="19" r="1.2" fill="#217a3a" />
                 </svg>
             </span>
-            <span class="eco-text">Boutique et fournisseurs engagés : reprise écologique, recyclage et partenaires
-                responsables ♻️</span>
+            <span class="eco-text">
+                Boutique et fournisseurs engagés : reprise écologique, recyclage et partenaires responsables ♻️
+            </span>
             <button class="eco-close" aria-label="Fermer">&times;</button>
         </div>
     </footer>
