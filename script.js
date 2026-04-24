@@ -7,51 +7,47 @@ document.addEventListener("DOMContentLoaded", function () {
     if (repairFamilySelect && repairModelSelect && repairImage && repairPriceList) {
         const repairCatalog = {
             iphone: {
-                "iPhone 17 Pro Max": { image: "17promax.png" },
-                "iPhone 17 Pro": { image: "17PRO.png" },
-                "iPhone 17 Air": { image: "17air.png" },
-                "iPhone 17": { image: "17.png" },
+                "iPhone 17 Pro Max": { image: "images/iphone-17-pro-max.jpg" },
+                "iPhone 17 Pro": { image: "images/iphone-17-pro.jpg" },
+                "iPhone 17 Air": { image: "images/iphone-17-plus.jpg" },
+                "iPhone 17": { image: "images/iphone-17.jpg" },
 
-                "iPhone 16 Pro Max": { image: "16pro promax.png" },
-                "iPhone 16 Pro": { image: "16PRO.png" },
-                "iPhone 16 plus": { image: "16.png" },
-                "iPhone 16": { image: "16.png" },
-                "iPhone 16e": { image: "16e.png" },
+                "iPhone 16 Pro Max": { image: "images/iphone-16-pro-max.jpg" },
+                "iPhone 16 Pro": { image: "images/iphone-16-pro.jpg" },
+                "iPhone 16 Plus": { image: "images/iphone-16-plus.jpg" },
+                "iPhone 16": { image: "images/iphone-16.jpg" },
 
-                "iPhone 15 Pro Max": { image: "15pro promax.png" },
-                "iPhone 15 Pro": { image: "15pro promax.png" },
-                "iPhone 15 Plus": { image: "15.png" },
-                "iPhone 15": { image: "15.png" },
+                "iPhone 15 Pro Max": { image: "images/iphone-15-pro-max.jpg" },
+                "iPhone 15 Pro": { image: "images/iphone-15-pro.jpg" },
+                "iPhone 15 Plus": { image: "images/iphone-15-plus.jpg" },
+                "iPhone 15": { image: "images/iphone-15.jpg" },
 
-                "iPhone 14 Pro Max": { image: "14pro promax.png" },
-                "iPhone 14 Pro": { image: "14pro promax.png" },
-                "iPhone 14 Plus": { image: "14.png" },
-                "iPhone 14": { image: "14.png" },
+                "iPhone 14 Pro Max": { image: "images/iphone-14-pro-max.jpg" },
+                "iPhone 14 Pro": { image: "images/iphone-14-pro.jpg" },
+                "iPhone 14 Plus": { image: "images/iphone-14-plus.jpg" },
+                "iPhone 14": { image: "images/iphone-14.jpg" },
 
-                "iPhone 13 Pro Max": { image: "13pro promax.png" },
-                "iPhone 13 Pro": { image: "13pro promax.png" },
-                "iPhone 13": { image: "13.png" },
-                "iPhone 13 mini": { image: "13.png" },
+                "iPhone 13 Pro Max": { image: "images/iphone-13-pro-max.jpg" },
+                "iPhone 13 Pro": { image: "images/iphone-13-pro.jpg" },
+                "iPhone 13": { image: "images/iphone-13.jpg" },
+                "iPhone 13 mini": { image: "images/iphone-13-mini.jpg" },
 
-                "iPhone 12 Pro Max": { image: "12pro promax.png" },
-                "iPhone 12 Pro": { image: "12pro promax.png" },
-                "iPhone 12": { image: "12.png" },
-                "iPhone 12 mini": { image: "12.png" },
+                "iPhone 12 Pro Max": { image: "images/iphone-12-pro-max.jpg" },
+                "iPhone 12 Pro": { image: "images/iphone-12-pro.jpg" },
+                "iPhone 12": { image: "images/iphone-12.jpg" },
+                "iPhone 12 mini": { image: "images/iphone-12-mini.jpg" },
 
-                "iPhone 11 Pro Max": { image: "11pro promax.png" },
-                "iPhone 11 Pro": { image: "11pro promax.png" },
-                "iPhone 11": { image: "11.png   " },
+                "iPhone 11 Pro Max": { image: "images/iphone-11-pro-max.jpg" },
+                "iPhone 11 Pro": { image: "images/iphone-11-pro.jpg" },
+                "iPhone 11": { image: "images/iphone-11.jpg" },
 
-                "iPhone XS Max": { image: "xs xsmax.png" },
-                "iPhone XS": { image: "xs xsmax.png" },
-                "iPhone XR": { image: "xr.png" },
-                "iPhone X": { image: "x.png" },
+                "iPhone XS Max": { image: "images/iphone-xs-max.jpg" },
+                "iPhone XS": { image: "images/iphone-xs.jpg" },
+                "iPhone XR": { image: "images/iphone-xr.jpg" },
+                "iPhone X": { image: "images/iphone-x.jpg" },
 
-                "iPhone 8 Plus": { image: "8plus.png" },
-                "iPhone 8": { image: "8.png" }
-
-                "iPhone SE 2éme génération": { image: "se 2emegen.png" }
-                "iPhone SE 3éme génération": { image: "se 3emegen.png" }
+                "iPhone 8 Plus": { image: "images/iphone-8-plus.jpg" },
+                "iPhone 8": { image: "images/iphone-8.jpg" }
             },
 
             samsung: {
