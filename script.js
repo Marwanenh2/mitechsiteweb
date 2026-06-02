@@ -1,4 +1,36 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // Hamburger Menu Toggle
+    const hamburgerBtn = document.querySelector('.hamburger-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', function () {
+            hamburgerBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            hamburgerBtn.setAttribute('aria-expanded', hamburgerBtn.classList.contains('active'));
+        });
+
+        // Close menu when a link is clicked
+        if (navLinks) {
+            navLinks.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function () {
+                    hamburgerBtn.classList.remove('active');
+                    navLinks.classList.remove('active');
+                    hamburgerBtn.setAttribute('aria-expanded', false);
+                });
+            });
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function (event) {
+            if (!hamburgerBtn.contains(event.target) && !navLinks.contains(event.target)) {
+                hamburgerBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+                hamburgerBtn.setAttribute('aria-expanded', false);
+            }
+        });
+    }
+
     const repairFamilySelect = document.getElementById("repair-family");
     const repairModelSelect = document.getElementById("repair-model");
     const repairImage = document.getElementById("repair-phone-image");
