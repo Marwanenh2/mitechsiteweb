@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const repairCatalog = {
             iphone: {
                 "iPhone 17 Pro Max": { image: "17promax.png" },
-                "iPhone 17 Pro": { image: "17PRO.webp" },
+                "iPhone 17 Pro": { image: "17promax.png" },
                 "iPhone 17 Air": { image: "17ait.png" },
                 "iPhone 17": { image: "17.png" },
 
@@ -81,36 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 "iPhone 8": { image: "8.png" },
                 "iPhone SE 2e Génération": { image: "se 2emegen.png" },
                 "iPhone SE 3e Génération": { image: "se 3emegen.png" }
-            },
-
-            samsung: {
-                "Galaxy S26 Ultra": { image: "images/galaxy-s26-ultra.jpg" },
-                "Galaxy S26+": { image: "images/galaxy-s26-plus.jpg" },
-                "Galaxy S26": { image: "images/galaxy-s26.jpg" },
-
-                "Galaxy S25 Ultra": { image: "images/galaxy-s25-ultra.jpg" },
-                "Galaxy S25+": { image: "images/galaxy-s25-plus.jpg" },
-                "Galaxy S25": { image: "images/galaxy-s25.jpg" },
-
-                "Galaxy S24 Ultra": { image: "images/galaxy-s24-ultra.jpg" },
-                "Galaxy S24+": { image: "images/galaxy-s24-plus.jpg" },
-                "Galaxy S24": { image: "images/galaxy-s24.jpg" },
-
-                "Galaxy S23 Ultra": { image: "images/galaxy-s23-ultra.jpg" },
-                "Galaxy S23+": { image: "images/galaxy-s23-plus.jpg" },
-                "Galaxy S23": { image: "images/galaxy-s23.jpg" },
-
-                "Galaxy S22 Ultra": { image: "images/galaxy-s22-ultra.jpg" },
-                "Galaxy S22+": { image: "images/galaxy-s22-plus.jpg" },
-                "Galaxy S22": { image: "images/galaxy-s22.jpg" },
-
-                "Galaxy S21 Ultra": { image: "images/galaxy-s21-ultra.jpg" },
-                "Galaxy S21+": { image: "images/galaxy-s21-plus.jpg" },
-                "Galaxy S21": { image: "images/galaxy-s21.jpg" },
-
-                "Galaxy A55": { image: "images/galaxy-a55.jpg" },
-                "Galaxy A54": { image: "images/galaxy-a54.jpg" },
-                "Galaxy A34": { image: "images/galaxy-a34.jpg" }
             }
         };
 
@@ -178,6 +148,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
         repairModelSelect.addEventListener("change", function () {
             renderRepairServices(repairFamilySelect.value, repairModelSelect.value);
+        });
+    }
+
+    const contactForm = document.getElementById("contact-form");
+    if (contactForm) {
+        contactForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const nom = document.getElementById("nom")?.value?.trim() || "";
+            const email = document.getElementById("email")?.value?.trim() || "";
+            const message = document.getElementById("message")?.value?.trim() || "";
+
+            const subject = encodeURIComponent(`Nouveau message depuis le site - ${nom}`);
+            const body = encodeURIComponent(`Nom : ${nom}\nEmail : ${email}\n\nMessage :\n${message}`);
+
+            window.location.href = `mailto:mitech.rouen@gmail.com?subject=${subject}&body=${body}`;
         });
     }
 
