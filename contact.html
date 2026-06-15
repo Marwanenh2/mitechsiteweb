@@ -92,8 +92,8 @@
                     </ul>
                 </div>
 
-                <form id="contact-form" class="contact-form-wrap reveal" action="mailto:mitech.rouen@gmail.com"
-                    method="post">
+                <form id="contact-form" class="contact-form-wrap reveal"
+                    action="https://formsubmit.co/ajax/mitech.rouen@gmail.com" method="POST">
                     <div class="form-group">
                         <label for="nom">Nom</label>
                         <input type="text" id="nom" name="nom" placeholder="Votre nom" required />
@@ -107,6 +107,9 @@
                         <textarea id="message" name="message" rows="5" placeholder="Décrivez votre besoin..."
                             required></textarea>
                     </div>
+                    <input type="hidden" name="_subject" value="Nouveau message depuis le site Mitech" />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
                     <button type="submit" class="btn btn-light btn-submit">Envoyer <span>→</span></button>
                 </form>
 

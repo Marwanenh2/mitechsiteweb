@@ -152,18 +152,37 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const contactForm = document.getElementById("contact-form");
-    if (contactForm) {
+    const formStatus = document.getElementById("form-status");
+
+    if (contactForm && formStatus) {
         contactForm.addEventListener("submit", function (event) {
             event.preventDefault();
 
-            const nom = document.getElementById("nom")?.value?.trim() || "";
-            const email = document.getElementById("email")?.value?.trim() || "";
-            const message = document.getElementById("message")?.value?.trim() || "";
+            formStatus.textContent = "Envoi en cours...";
+            formStatus.className = "form-status";
+            formStatus.style.display = "block";
 
-            const subject = encodeURIComponent(`Nouveau message depuis le site - ${nom}`);
-            const body = encodeURIComponent(`Nom : ${nom}\nEmail : ${email}\n\nMessage :\n${message}`);
+            const formData = new FormData(contactForm);
+            formData.set("_subject", "Nouveau message depuis le site Mitech");
+            formData.set("_captcha", "false");
 
-            window.location.href = `mailto:mitech.rouen@gmail.com?subject=${subject}&body=${body}`;
+            fetch(contactForm.action, {
+                method: "POST",
+                body: formData
+            })
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error("Erreur d’envoi");
+                    }
+
+                    formStatus.textContent = "Votre message a bien été envoyé. Merci !";
+                    formStatus.classList.add("success");
+                    contactForm.reset();
+                })
+                .catch(function () {
+                    formStatus.textContent = "Une erreur est survenue. Vous pouvez aussi nous écrire directement à mitech.rouen@gmail.com.";
+                    formStatus.classList.add("error");
+                });
         });
     }
 
